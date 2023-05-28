@@ -1,0 +1,115 @@
+.service {
+    padding-bottom: 115px;
+}
+.service-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-top-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+.service-top-title::after {
+    content: "";
+    position: absolute;
+    background-color: #00A4E5;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    width: 50px;
+}
+.service-top-title + p {
+    margin-left: 154px;
+}
+.service-top-text {
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555B;
+    max-width: 405px;
+}
+.service-top-btn {
+}
+.service-top + div {
+    margin-top: 76px;
+}
+.service-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-bottom-card {
+    width: 295px;
+    padding: 38px 22px;
+    border: 1px solid #E6E6E6;
+}
+.card-icon + div {
+    margin-top: 25px;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+    text-transform: uppercase;
+}
+.card-title + div {
+    margin-top: 13px;
+}
+.card-text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+@media (max-width: 914px) {
+    .service {
+        padding-bottom: 0;
+    }
+    .service-bottom-card:last-child {
+        margin-top: 18px;
+    }
+    .service-top-title + p {
+        margin-left: 18px;
+    }
+}
+
+@media (max-width: 895px) {
+}
+
+@media (max-width: 802px) {
+    .service-top {
+        flex-direction: column;
+    }
+    .service-top-title::after {
+        left: 35%;
+    }
+    .service-top-text {
+        margin-top: 18px;
+    }
+    .service-top-btn {
+        margin-top: 18px;
+    }
+    .service-top + div {
+        margin-top: 38px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .service-bottom-card:nth-child(2) {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 495px) {
+}

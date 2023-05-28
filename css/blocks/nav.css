@@ -1,0 +1,31 @@
+.nav {
+    padding: 24px 0;    
+}
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: #48555B;
+    text-transform: uppercase;
+}
+.nav__list ul {
+    display: flex;
+}
+.nav__list li + li {
+    margin-left: 40px;
+}
+.nav__list a:hover {
+    transition: 0.2s ease;
+    color: #00A4E5;;
+}
+@media (max-width: 560px) {
+    .nav__list {
+        display: none;    
+    }
+}

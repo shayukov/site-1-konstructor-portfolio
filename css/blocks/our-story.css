@@ -1,0 +1,114 @@
+.our-story {
+    padding: 58px 0 118px;
+}
+.our-story__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 74px;
+}
+.our-story__title::after {
+    content: "";
+    position: absolute;
+    left: 445px; 
+    right: 445px;   
+    height: 2px;
+    background-color: #00A4E5;
+    bottom: 0px;
+}
+.our-story__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+.our-story__content {
+    width: 405px;
+}
+.our-story-content__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+.our-story-content__title > span {
+    color: #16ACE8;
+}
+.our-story-content__title + * {
+    margin-top: 28px;
+}
+.our-story__content > p {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+/* Images */
+.our-story__images {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.our-story__images>.box + * {
+    margin-left: 20px;
+}
+.our-story-images__wrapper {
+    width: 140px;
+    padding-bottom: 160%;
+    background-color: aquamarine;
+    position: relative;
+}
+.our-story-images__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.our-story-images__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1875px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 895px) {
+    .our-story__title {
+        text-align: start;
+        margin-bottom: 44px;
+    }
+    .our-story-content__title + * {
+        margin-top: 18px;
+    }  
+    .our-story__title::after {
+        left: 0;
+        width: 50px;
+    }
+    .our-story__content + div {
+        margin-top: 18px;
+    }
+    .our-story {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 495px) {
+    .our-story__images {
+        flex-direction: column;
+    }
+    .our-story__images>.box + * {
+        margin-left: 0;
+        margin-top: 18px;
+    }
+}

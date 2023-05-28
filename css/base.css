@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url(../font/bebas-neue-bold.ttf);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Utility */
+.none {
+    display: none !important;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+  }
+  
+  /*  */
+  .container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    padding: 11px 0;
+    background-color: #00A4E5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+  }
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
